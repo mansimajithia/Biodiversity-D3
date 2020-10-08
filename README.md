@@ -6,6 +6,8 @@
 
 # Key Skills
 * JavaScript
+* D3.js
+
 ![Newsroom](https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif)
 
 ## Background
