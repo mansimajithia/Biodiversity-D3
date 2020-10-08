@@ -17,7 +17,7 @@ var svg = d3.select("#scatter") // insert chart to tag id "scatter"
   .attr("width", svgWidth)
   .attr("height", svgHeight);
 
-var chartGroup = svg.append("g") // group, g element
+var chartGroup = svg.append("g") 
   .attr("height", height)
   .attr("width", width)
   .attr("transform", `translate(${margin.left}, ${margin.top})`);
@@ -116,10 +116,10 @@ function updateToolTip(xProperty,yProperty, circlesGroup) {
     .offset([80, -60])
     .html(function (d) {
           if (xProperty === "poverty") {
-            return (`${d.state}<br>${label} ${d[xProperty]}%<br>${ylabel} ${d[yProperty]}%`); // format poverty prec
+            return (`${d.state}<br>${label} ${d[xProperty]}%<br>${ylabel} ${d[yProperty]}%`); 
           }
           else
-          return (`${d.state}<br>${label} ${d[xProperty]}<br>${ylabel} ${d[yProperty]}%`); // format y axis perc
+          return (`${d.state}<br>${label} ${d[xProperty]}<br>${ylabel} ${d[yProperty]}%`);
     });
    
   //function chosen x and y tooltip
@@ -172,8 +172,8 @@ function updateToolTip(xProperty,yProperty, circlesGroup) {
     .data(data)
     .enter()
     .append("circle")
-    .attr("cx", d => xLinearScale(d[xProperty])) // look at this cx (center x) data point and apply return that x coordinate
-    .attr("cy", d => yLinearScale(d[yProperty])) // apply to y coordinate
+    .attr("cx", d => xLinearScale(d[xProperty])) 
+    .attr("cy", d => yLinearScale(d[yProperty])) 
     .attr("r", "15") 
     .attr("class", "stateCircle") 
     .attr("opacity", ".7");
@@ -187,21 +187,21 @@ function updateToolTip(xProperty,yProperty, circlesGroup) {
   var povertyLabel = labelsGroup.append("text")
     .attr("x", 0)
     .attr("y", 15)
-    .attr("value", "poverty") // value to grab for event listener
+    .attr("value", "poverty")
     .classed("active", true)
     .text("In Poverty %");
 
   var incomeLabel = labelsGroup.append("text")
     .attr("x", 0)
     .attr("y", 30)
-    .attr("value", "income") // value to grab for event listener
+    .attr("value", "income")
     .classed("inactive", true)
     .text("Household Income (Median)");
 
     var ageLabel = labelsGroup.append("text")
     .attr("x", 0)
     .attr("y", 45)
-    .attr("value", "age") // value to grab for event listener
+    .attr("value", "age") 
     .classed("inactive", true)
     .text("Age (Median)");  
 
@@ -210,7 +210,7 @@ function updateToolTip(xProperty,yProperty, circlesGroup) {
     .attr("transform","rotate(-90)")
     .attr("x", (margin.left) * 2.5)
     .attr("y", 0 - (height -60))
-    .attr("value", "obesity") // value to grab for event listener
+    .attr("value", "obesity") 
     .classed("active", true)
     .text("Obesity (%)");
 
@@ -218,7 +218,7 @@ function updateToolTip(xProperty,yProperty, circlesGroup) {
     .attr("transform","rotate(-90)")
     .attr("x", (margin.left) * 2.5)
     .attr("y", 0 - (height -40))
-    .attr("value", "smokes") // value to grab for event listener
+    .attr("value", "smokes") 
     .classed("inactive", true)
     .text("Smokes (%)");
 
