@@ -4,6 +4,7 @@
 * The purpose of this assignment was to use the data set from US Census to invesitigate rates of income, obesity, poverty, etc. by state to build a scatterplot
 * The dataset: https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml](https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml
 
+# Key Skills
 ![Newsroom](https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif)
 
 ## Background
