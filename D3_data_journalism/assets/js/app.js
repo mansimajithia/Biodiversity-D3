@@ -4,7 +4,7 @@ var svgHeight = 625;
 var margin = {
   top: 20,
   right: 40,
-  bottom: 100,
+  bottom: 140,
   left: 100
 };
 
