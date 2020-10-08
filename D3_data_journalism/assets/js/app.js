@@ -226,7 +226,7 @@ function updateToolTip(xProperty,yProperty, circlesGroup) {
     .attr("transform","rotate(-90)")
     .attr("x", (margin.left) * 2.5)
     .attr("y", 0 - (height -20))
-    .attr("value", "healthcare") // value to grab for event listener
+    .attr("value", "healthcare") 
     .classed("inactive", true)
     .text("Lacks Healthcare (%)");  
 
@@ -237,9 +237,9 @@ function updateToolTip(xProperty,yProperty, circlesGroup) {
     .enter()
     .append("text")
     .text(d => d.abbr)
-    .attr("x", d => xLinearScale(d[xProperty])) // look at this data point property and apply return that x coordinate
+    .attr("x", d => xLinearScale(d[xProperty])) 
     .attr("y", d => yLinearScale(d[yProperty])) 
-    .attr("class", "stateText") // .stateText class in d3Style.css stying for circle text
+    .attr("class", "stateText") 
     .attr("font-size", "9");
 
 
