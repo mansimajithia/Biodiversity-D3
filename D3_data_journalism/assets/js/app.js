@@ -13,7 +13,7 @@ var height = svgHeight - margin.top - margin.bottom;
 
 // Create an SVG wrapper, append an SVG group that will hold our chart, and shift the latter by left and top margins.
 var svg = d3.select("#scatter") // insert chart to tag id "scatter"
-  .append("svg") // append svg element
+  .append("svg")
   .attr("width", svgWidth)
   .attr("height", svgHeight);
 
@@ -345,8 +345,8 @@ function updateToolTip(xProperty,yProperty, circlesGroup) {
     
        // updates circles with new x values
        circlesGroup = renderCircles(circlesGroup, xLinearScale, xProperty, yLinearScale, yProperty);
-
-       circleText = renderText(circleText, xLinearScale, xProperty, yLinearScale, yProperty); //* update circle text
+      //  update circle text
+       circleText = renderText(circleText, xLinearScale, xProperty, yLinearScale, yProperty); 
 
        // updates tooltips with new info
        circlesGroup = updateToolTip(xProperty, yProperty, circlesGroup);
