@@ -8,6 +8,7 @@
 * JavaScript
 * D3.js
 * D3.js interactive visualization
+* tooltips
 
 
 ![Newsroom](https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif)
