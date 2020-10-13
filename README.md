@@ -30,7 +30,8 @@
     .attr("class", "stateText") 
     .attr("font-size", "9");
 ```
-
+### Step 3 - Bonus
+* The bonus portion required additional variables and tooltip with interactions.
 
 
 ![Newsroom](https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif)
